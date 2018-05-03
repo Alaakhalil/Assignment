@@ -1,0 +1,983 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23DCC655B336BE497568FAC929C6E314 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		29D5E1AF5C03D6379B61AA00F90EB44C /* Pods-AssignmentTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB747B8988DCFB4862742AEE2C685FA /* Pods-AssignmentTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		643971CC1B84F6E48C1807DD4D2BEEA9 /* Pods-AssignmentUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA925DE65ADE95B1538F918E8BAAAB85 /* Pods-AssignmentUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75384E4B56F2B30ED73558C9AB2F71AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7A0CF0F18CD543AED57290F58DD7B06A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7E6D6A9BF3F8B05C3B0C1E8470C5EFDF /* ic_check_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F6CCF1A0F683E69A6E28C80CEFD21D /* ic_check_3x.png */; };
+		81FE2E10E4FFAF47BE38C9249D40CB7B /* UICheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2961784BE0C100D5F87FE047C02F3719 /* UICheckbox.swift */; };
+		86ABD7F91A16203086F69F6DA55651A8 /* Pods-Assignment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C6E83D4BACCD1CECF2614A35BE18F32 /* Pods-Assignment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4D4A22797DC715337B121EFB6536B40 /* Pods-Assignment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27614A6D9FADC38A176A179446FBFB62 /* Pods-Assignment-dummy.m */; };
+		C273D6E50EE2519AE200B7E87C41943C /* UICheckbox.Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 427E01335BA915CF0215BADA0E7DE154 /* UICheckbox.Swift-dummy.m */; };
+		C6F71E2ACDC1E3E4D25466884B07AE18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D283BE227A0D8D92AB26EE36F6293420 /* Pods-AssignmentUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9401A10EB83DC43DBF06202D622280 /* Pods-AssignmentUITests-dummy.m */; };
+		E18F477AD30084C575197B24670E8511 /* Pods-AssignmentTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AFCD1505619970C23B1674290C075 /* Pods-AssignmentTests-dummy.m */; };
+		EB36FC94C0C6E71789BA89FC2C277B2C /* UICheckbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6EA3C546BFC67F792CC6066F4A3293F /* UICheckbox.bundle */; };
+		F91242AF692175A9CB2DEA25FD55BC61 /* UICheckbox.Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDBB51F9EED500FE9D1180C6D27DC6A4 /* UICheckbox.Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50FD93008B3E315E3A7B311157109E4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94DA7C2A8C7DA681BC573D16D5217808;
+			remoteInfo = "UICheckbox.Swift-UICheckbox";
+		};
+		C5DEFBB2E10AD0A2A9190904E5D98B07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F20122C1B396BA338F6E1510A911A512;
+			remoteInfo = UICheckbox.Swift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0800DCC191AEB01BF5C7CB7DF680C2C8 /* Pods_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AssignmentUITests.framework; path = "Pods-AssignmentUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		107776E15A8EDEF92225E6313D93C98A /* Pods-AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E2A6B93E0EAE906F90DA20E17BDA023 /* Pods-AssignmentUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AssignmentUITests-frameworks.sh"; sourceTree = "<group>"; };
+		1EB747B8988DCFB4862742AEE2C685FA /* Pods-AssignmentTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AssignmentTests-umbrella.h"; sourceTree = "<group>"; };
+		25E39A2EC54CE8FC3A043FE19671AE7D /* Pods-Assignment-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Assignment-acknowledgements.plist"; sourceTree = "<group>"; };
+		27614A6D9FADC38A176A179446FBFB62 /* Pods-Assignment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Assignment-dummy.m"; sourceTree = "<group>"; };
+		2829349C0C85BBAFF88F63A9782EA05B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2961784BE0C100D5F87FE047C02F3719 /* UICheckbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICheckbox.swift; path = UICheckbox/Classes/UICheckbox.swift; sourceTree = "<group>"; };
+		3569AF0A4A32DCDF9ACB59F90E7D4599 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35F6CCF1A0F683E69A6E28C80CEFD21D /* ic_check_3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ic_check_3x.png; path = UICheckbox/Assets/ic_check_3x.png; sourceTree = "<group>"; };
+		37136404F2ED03FEF366C3B603D5DC0F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C6E83D4BACCD1CECF2614A35BE18F32 /* Pods-Assignment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Assignment-umbrella.h"; sourceTree = "<group>"; };
+		427E01335BA915CF0215BADA0E7DE154 /* UICheckbox.Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICheckbox.Swift-dummy.m"; sourceTree = "<group>"; };
+		444E1589D8508530EBEA1928004F8964 /* Pods-Assignment-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Assignment-acknowledgements.markdown"; sourceTree = "<group>"; };
+		454236368F409F241E743166C0E6A57E /* Pods-Assignment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Assignment.modulemap"; sourceTree = "<group>"; };
+		54E774FB188D8D41B9871F44801A6369 /* ResourceBundle-UICheckbox-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-UICheckbox-Info.plist"; sourceTree = "<group>"; };
+		649FC0A8353F7EAE8881D98E1A9E5B18 /* UICheckbox.Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICheckbox.Swift-prefix.pch"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6668FB863312F8BC95E9F52102BAF074 /* UICheckbox.Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICheckbox.Swift.xcconfig; sourceTree = "<group>"; };
+		674D360DC786A6D1AA5897A0B676B977 /* Pods-Assignment-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Assignment-frameworks.sh"; sourceTree = "<group>"; };
+		6B0E311AD7CD837F2449898E0FDD9E34 /* Pods-AssignmentTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AssignmentTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6D646C1E85A2B2CB472D794B4AF9578E /* Pods-AssignmentTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AssignmentTests-resources.sh"; sourceTree = "<group>"; };
+		6FF93ACB25474A5B9D18FF8476CA25A3 /* Pods-Assignment-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Assignment-resources.sh"; sourceTree = "<group>"; };
+		730D54067C040A1D33694DEC423FD960 /* Pods-AssignmentUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AssignmentUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		788918A6DC49DFEDB35F7F63B82E9166 /* Pods-AssignmentUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AssignmentUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		793AFCD1505619970C23B1674290C075 /* Pods-AssignmentTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AssignmentTests-dummy.m"; sourceTree = "<group>"; };
+		8A516258B7A440DDF4A03A2F5383C0DC /* Pods-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		8E1FC9164DF7786415CB8882CB133FB8 /* Pods-AssignmentUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AssignmentUITests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DA62425F57C7A0C1FE684CD5CC9ABB8 /* Pods-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		9E9401A10EB83DC43DBF06202D622280 /* Pods-AssignmentUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AssignmentUITests-dummy.m"; sourceTree = "<group>"; };
+		A00AFD666116A9286F37341F23D4D0BC /* Pods-AssignmentTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AssignmentTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AE081DFDA313A88B25DE19D6AB81F24F /* Pods_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Assignment.framework; path = "Pods-Assignment.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6EA3C546BFC67F792CC6066F4A3293F /* UICheckbox.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = UICheckbox.bundle; path = "UICheckbox.Swift-UICheckbox.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC277BD717D1F370F78DB9B8B6C41D86 /* Pods-AssignmentTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AssignmentTests.modulemap"; sourceTree = "<group>"; };
+		CE49537FBA93B4A2BAA36172A54289FF /* Pods-AssignmentUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AssignmentUITests-resources.sh"; sourceTree = "<group>"; };
+		CF8866CE132D06AC1A22F4D462D04C32 /* Pods_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AssignmentTests.framework; path = "Pods-AssignmentTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B4FA9142B45411C1E3010DAAC5EF49 /* Pods-AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		D485080D7871FBD0122DBB41A408757E /* UICheckbox_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UICheckbox_Swift.framework; path = UICheckbox.Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC97B3204E126FFCF63907AF0C4C71F6 /* Pods-AssignmentTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AssignmentTests-frameworks.sh"; sourceTree = "<group>"; };
+		DDBB51F9EED500FE9D1180C6D27DC6A4 /* UICheckbox.Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICheckbox.Swift-umbrella.h"; sourceTree = "<group>"; };
+		E13A4D9B9E6608DC12B2F358A71D18B1 /* UICheckbox.Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UICheckbox.Swift.modulemap; sourceTree = "<group>"; };
+		E2EC02424AAC17E7FCC03E39120C215A /* Pods-AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EA3CD4E483C5CA2BEA7FB5A8EBF94CC9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82DBFF44380592FDE0B6C853BBD4791 /* Pods-AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA925DE65ADE95B1538F918E8BAAAB85 /* Pods-AssignmentUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AssignmentUITests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29033CBA2CC9021E817D81C60383FAF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0CF0F18CD543AED57290F58DD7B06A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F262D01CB85C25B9062601A0608CDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A931279F6E6A39F1251AC63019172D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75384E4B56F2B30ED73558C9AB2F71AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF399CA0A26D9E9446587EC36F3996E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23DCC655B336BE497568FAC929C6E314 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F680FB2BA0F0480E06A447512D0804D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F71E2ACDC1E3E4D25466884B07AE18 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CC69A810F5B03950FE7ECFCC3D8F5ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA3CD4E483C5CA2BEA7FB5A8EBF94CC9 /* Info.plist */,
+				54E774FB188D8D41B9871F44801A6369 /* ResourceBundle-UICheckbox-Info.plist */,
+				E13A4D9B9E6608DC12B2F358A71D18B1 /* UICheckbox.Swift.modulemap */,
+				6668FB863312F8BC95E9F52102BAF074 /* UICheckbox.Swift.xcconfig */,
+				427E01335BA915CF0215BADA0E7DE154 /* UICheckbox.Swift-dummy.m */,
+				649FC0A8353F7EAE8881D98E1A9E5B18 /* UICheckbox.Swift-prefix.pch */,
+				DDBB51F9EED500FE9D1180C6D27DC6A4 /* UICheckbox.Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UICheckbox.Swift";
+			sourceTree = "<group>";
+		};
+		36291831A236BB2A2D5396281CF860AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7AAAFF7341D65ABC8FBF9830AF4D183 /* UICheckbox.Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		370D57C40153AABA3D23C2024C4504EF /* Pods-AssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				37136404F2ED03FEF366C3B603D5DC0F /* Info.plist */,
+				8E1FC9164DF7786415CB8882CB133FB8 /* Pods-AssignmentUITests.modulemap */,
+				730D54067C040A1D33694DEC423FD960 /* Pods-AssignmentUITests-acknowledgements.markdown */,
+				788918A6DC49DFEDB35F7F63B82E9166 /* Pods-AssignmentUITests-acknowledgements.plist */,
+				9E9401A10EB83DC43DBF06202D622280 /* Pods-AssignmentUITests-dummy.m */,
+				1E2A6B93E0EAE906F90DA20E17BDA023 /* Pods-AssignmentUITests-frameworks.sh */,
+				CE49537FBA93B4A2BAA36172A54289FF /* Pods-AssignmentUITests-resources.sh */,
+				FA925DE65ADE95B1538F918E8BAAAB85 /* Pods-AssignmentUITests-umbrella.h */,
+				F82DBFF44380592FDE0B6C853BBD4791 /* Pods-AssignmentUITests.debug.xcconfig */,
+				E2EC02424AAC17E7FCC03E39120C215A /* Pods-AssignmentUITests.release.xcconfig */,
+			);
+			name = "Pods-AssignmentUITests";
+			path = "Target Support Files/Pods-AssignmentUITests";
+			sourceTree = "<group>";
+		};
+		37A6A575B5AB936E295AA734ABBE301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE081DFDA313A88B25DE19D6AB81F24F /* Pods_Assignment.framework */,
+				CF8866CE132D06AC1A22F4D462D04C32 /* Pods_AssignmentTests.framework */,
+				0800DCC191AEB01BF5C7CB7DF680C2C8 /* Pods_AssignmentUITests.framework */,
+				B6EA3C546BFC67F792CC6066F4A3293F /* UICheckbox.bundle */,
+				D485080D7871FBD0122DBB41A408757E /* UICheckbox_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EA1A4ADC77C430B1898F5B7F64A07CE /* Pods-AssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				3569AF0A4A32DCDF9ACB59F90E7D4599 /* Info.plist */,
+				CC277BD717D1F370F78DB9B8B6C41D86 /* Pods-AssignmentTests.modulemap */,
+				6B0E311AD7CD837F2449898E0FDD9E34 /* Pods-AssignmentTests-acknowledgements.markdown */,
+				A00AFD666116A9286F37341F23D4D0BC /* Pods-AssignmentTests-acknowledgements.plist */,
+				793AFCD1505619970C23B1674290C075 /* Pods-AssignmentTests-dummy.m */,
+				DC97B3204E126FFCF63907AF0C4C71F6 /* Pods-AssignmentTests-frameworks.sh */,
+				6D646C1E85A2B2CB472D794B4AF9578E /* Pods-AssignmentTests-resources.sh */,
+				1EB747B8988DCFB4862742AEE2C685FA /* Pods-AssignmentTests-umbrella.h */,
+				107776E15A8EDEF92225E6313D93C98A /* Pods-AssignmentTests.debug.xcconfig */,
+				D2B4FA9142B45411C1E3010DAAC5EF49 /* Pods-AssignmentTests.release.xcconfig */,
+			);
+			name = "Pods-AssignmentTests";
+			path = "Target Support Files/Pods-AssignmentTests";
+			sourceTree = "<group>";
+		};
+		7756193F64B9F802EA1658B60EBCFFB5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6C3DC9ABB4EE8614F68BAA5975CF413 /* Pods-Assignment */,
+				3EA1A4ADC77C430B1898F5B7F64A07CE /* Pods-AssignmentTests */,
+				370D57C40153AABA3D23C2024C4504EF /* Pods-AssignmentUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				36291831A236BB2A2D5396281CF860AD /* Pods */,
+				37A6A575B5AB936E295AA734ABBE301F /* Products */,
+				7756193F64B9F802EA1658B60EBCFFB5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6C3DC9ABB4EE8614F68BAA5975CF413 /* Pods-Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				2829349C0C85BBAFF88F63A9782EA05B /* Info.plist */,
+				454236368F409F241E743166C0E6A57E /* Pods-Assignment.modulemap */,
+				444E1589D8508530EBEA1928004F8964 /* Pods-Assignment-acknowledgements.markdown */,
+				25E39A2EC54CE8FC3A043FE19671AE7D /* Pods-Assignment-acknowledgements.plist */,
+				27614A6D9FADC38A176A179446FBFB62 /* Pods-Assignment-dummy.m */,
+				674D360DC786A6D1AA5897A0B676B977 /* Pods-Assignment-frameworks.sh */,
+				6FF93ACB25474A5B9D18FF8476CA25A3 /* Pods-Assignment-resources.sh */,
+				3C6E83D4BACCD1CECF2614A35BE18F32 /* Pods-Assignment-umbrella.h */,
+				8A516258B7A440DDF4A03A2F5383C0DC /* Pods-Assignment.debug.xcconfig */,
+				9DA62425F57C7A0C1FE684CD5CC9ABB8 /* Pods-Assignment.release.xcconfig */,
+			);
+			name = "Pods-Assignment";
+			path = "Target Support Files/Pods-Assignment";
+			sourceTree = "<group>";
+		};
+		C7AAAFF7341D65ABC8FBF9830AF4D183 /* UICheckbox.Swift */ = {
+			isa = PBXGroup;
+			children = (
+				2961784BE0C100D5F87FE047C02F3719 /* UICheckbox.swift */,
+				DA219B322707F1FDFE7DACFBBD83DD5B /* Resources */,
+				2CC69A810F5B03950FE7ECFCC3D8F5ED /* Support Files */,
+			);
+			name = UICheckbox.Swift;
+			path = UICheckbox.Swift;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DA219B322707F1FDFE7DACFBBD83DD5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35F6CCF1A0F683E69A6E28C80CEFD21D /* ic_check_3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		42BF614D81132783D10DBBD08B400514 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86ABD7F91A16203086F69F6DA55651A8 /* Pods-Assignment-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60F79E12BBC603A3EFDADFF52C7732BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91242AF692175A9CB2DEA25FD55BC61 /* UICheckbox.Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990A46052AF2F5EFAE83B3F667CAF617 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643971CC1B84F6E48C1807DD4D2BEEA9 /* Pods-AssignmentUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FBE078C0DF3C7551BA9BE969BA24717 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29D5E1AF5C03D6379B61AA00F90EB44C /* Pods-AssignmentTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B238A6B11786F77EA2EEEE57B213240 /* Pods-AssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C1D12A8092E5C43C6CDBA6AB5AAFCB7 /* Build configuration list for PBXNativeTarget "Pods-AssignmentUITests" */;
+			buildPhases = (
+				F84C1907D94AD95AE58E04EBFFE71FF7 /* Sources */,
+				F680FB2BA0F0480E06A447512D0804D0 /* Frameworks */,
+				990A46052AF2F5EFAE83B3F667CAF617 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AssignmentUITests";
+			productName = "Pods-AssignmentUITests";
+			productReference = 0800DCC191AEB01BF5C7CB7DF680C2C8 /* Pods_AssignmentUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		78A3EECF54B8F8DB6FC0E0029C83CED9 /* Pods-Assignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B8D200D42D11B8F8D6C5E4722138D08 /* Build configuration list for PBXNativeTarget "Pods-Assignment" */;
+			buildPhases = (
+				09A2A7109AD44B8380B77064FC5AF6DD /* Sources */,
+				8A931279F6E6A39F1251AC63019172D3 /* Frameworks */,
+				42BF614D81132783D10DBBD08B400514 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C73AB486C4012741D4C5E126116D46D /* PBXTargetDependency */,
+			);
+			name = "Pods-Assignment";
+			productName = "Pods-Assignment";
+			productReference = AE081DFDA313A88B25DE19D6AB81F24F /* Pods_Assignment.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		94DA7C2A8C7DA681BC573D16D5217808 /* UICheckbox.Swift-UICheckbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B92E6D58E571EB3796A6147851A26E39 /* Build configuration list for PBXNativeTarget "UICheckbox.Swift-UICheckbox" */;
+			buildPhases = (
+				E35162CE4D73C924746D9DEEDEE6BE2C /* Sources */,
+				33F262D01CB85C25B9062601A0608CDC /* Frameworks */,
+				2A5DD8425DE3DE4A40458362D6EFF523 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UICheckbox.Swift-UICheckbox";
+			productName = "UICheckbox.Swift-UICheckbox";
+			productReference = B6EA3C546BFC67F792CC6066F4A3293F /* UICheckbox.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		ECE4F08E930BE1B0C6BB9C496AC3E20A /* Pods-AssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01518C426C5C72DF3A14AC2458C028A8 /* Build configuration list for PBXNativeTarget "Pods-AssignmentTests" */;
+			buildPhases = (
+				C45329FD92926E2A8AEDF3581DE50602 /* Sources */,
+				29033CBA2CC9021E817D81C60383FAF6 /* Frameworks */,
+				9FBE078C0DF3C7551BA9BE969BA24717 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AssignmentTests";
+			productName = "Pods-AssignmentTests";
+			productReference = CF8866CE132D06AC1A22F4D462D04C32 /* Pods_AssignmentTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F20122C1B396BA338F6E1510A911A512 /* UICheckbox.Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9D6F7ADCC078001A11C020B6D899E1B /* Build configuration list for PBXNativeTarget "UICheckbox.Swift" */;
+			buildPhases = (
+				B0AE27F2DD535513CB1D38A0F17DCBD0 /* Sources */,
+				CF399CA0A26D9E9446587EC36F3996E4 /* Frameworks */,
+				A452AD02BA421FC4D36CD36404C04DC8 /* Resources */,
+				60F79E12BBC603A3EFDADFF52C7732BE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0B1558FD949AEF27DFB8ADDA67DD774 /* PBXTargetDependency */,
+			);
+			name = UICheckbox.Swift;
+			productName = UICheckbox.Swift;
+			productReference = D485080D7871FBD0122DBB41A408757E /* UICheckbox_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 37A6A575B5AB936E295AA734ABBE301F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78A3EECF54B8F8DB6FC0E0029C83CED9 /* Pods-Assignment */,
+				ECE4F08E930BE1B0C6BB9C496AC3E20A /* Pods-AssignmentTests */,
+				0B238A6B11786F77EA2EEEE57B213240 /* Pods-AssignmentUITests */,
+				F20122C1B396BA338F6E1510A911A512 /* UICheckbox.Swift */,
+				94DA7C2A8C7DA681BC573D16D5217808 /* UICheckbox.Swift-UICheckbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A5DD8425DE3DE4A40458362D6EFF523 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6D6A9BF3F8B05C3B0C1E8470C5EFDF /* ic_check_3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A452AD02BA421FC4D36CD36404C04DC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB36FC94C0C6E71789BA89FC2C277B2C /* UICheckbox.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09A2A7109AD44B8380B77064FC5AF6DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D4A22797DC715337B121EFB6536B40 /* Pods-Assignment-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0AE27F2DD535513CB1D38A0F17DCBD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81FE2E10E4FFAF47BE38C9249D40CB7B /* UICheckbox.swift in Sources */,
+				C273D6E50EE2519AE200B7E87C41943C /* UICheckbox.Swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C45329FD92926E2A8AEDF3581DE50602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18F477AD30084C575197B24670E8511 /* Pods-AssignmentTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E35162CE4D73C924746D9DEEDEE6BE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84C1907D94AD95AE58E04EBFFE71FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D283BE227A0D8D92AB26EE36F6293420 /* Pods-AssignmentUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C73AB486C4012741D4C5E126116D46D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICheckbox.Swift;
+			target = F20122C1B396BA338F6E1510A911A512 /* UICheckbox.Swift */;
+			targetProxy = C5DEFBB2E10AD0A2A9190904E5D98B07 /* PBXContainerItemProxy */;
+		};
+		C0B1558FD949AEF27DFB8ADDA67DD774 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UICheckbox.Swift-UICheckbox";
+			target = 94DA7C2A8C7DA681BC573D16D5217808 /* UICheckbox.Swift-UICheckbox */;
+			targetProxy = 50FD93008B3E315E3A7B311157109E4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AEF6E436DE07159B5AEE67FFCA21300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6668FB863312F8BC95E9F52102BAF074 /* UICheckbox.Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UICheckbox.Swift/UICheckbox.Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICheckbox.Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICheckbox.Swift/UICheckbox.Swift.modulemap";
+				PRODUCT_NAME = UICheckbox_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12C4B864767C59600DBFA238F1E2F8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		3A6F8EFD562D21FF15869E33E9F9F808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B4FA9142B45411C1E3010DAAC5EF49 /* Pods-AssignmentTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AssignmentTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AssignmentTests/Pods-AssignmentTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AssignmentTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		45099712DD8BCAD7AB8500ABF23A25D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F82DBFF44380592FDE0B6C853BBD4791 /* Pods-AssignmentUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AssignmentUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AssignmentUITests/Pods-AssignmentUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AssignmentUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		711A7E0A9C9178AB2707CAF46D169E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DA62425F57C7A0C1FE684CD5CC9ABB8 /* Pods-Assignment.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Assignment/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Assignment/Pods-Assignment.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Assignment;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8AF2A8163D0364A11DE3174597DAB79C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2EC02424AAC17E7FCC03E39120C215A /* Pods-AssignmentUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AssignmentUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AssignmentUITests/Pods-AssignmentUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AssignmentUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5F82F9B4FE408CB1BFE38CE09F4DE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107776E15A8EDEF92225E6313D93C98A /* Pods-AssignmentTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AssignmentTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AssignmentTests/Pods-AssignmentTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AssignmentTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B270F62FC2D7AA5FE4FC7D413F7EB41F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6668FB863312F8BC95E9F52102BAF074 /* UICheckbox.Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/UICheckbox.Swift";
+				INFOPLIST_FILE = "Target Support Files/UICheckbox.Swift/ResourceBundle-UICheckbox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = UICheckbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		BDD5E4B355228E711F6D2453006FACA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6668FB863312F8BC95E9F52102BAF074 /* UICheckbox.Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/UICheckbox.Swift";
+				INFOPLIST_FILE = "Target Support Files/UICheckbox.Swift/ResourceBundle-UICheckbox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = UICheckbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D3EBB6987D60E339FA451E78FA588AA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A516258B7A440DDF4A03A2F5383C0DC /* Pods-Assignment.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Assignment/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Assignment/Pods-Assignment.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Assignment;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE8AE616D74E0968A7A677BAA66DC603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6668FB863312F8BC95E9F52102BAF074 /* UICheckbox.Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UICheckbox.Swift/UICheckbox.Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICheckbox.Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICheckbox.Swift/UICheckbox.Swift.modulemap";
+				PRODUCT_NAME = UICheckbox_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01518C426C5C72DF3A14AC2458C028A8 /* Build configuration list for PBXNativeTarget "Pods-AssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F82F9B4FE408CB1BFE38CE09F4DE57 /* Debug */,
+				3A6F8EFD562D21FF15869E33E9F9F808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F0302F2371FCC6B73EF0A418D40734 /* Debug */,
+				12C4B864767C59600DBFA238F1E2F8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C1D12A8092E5C43C6CDBA6AB5AAFCB7 /* Build configuration list for PBXNativeTarget "Pods-AssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45099712DD8BCAD7AB8500ABF23A25D8 /* Debug */,
+				8AF2A8163D0364A11DE3174597DAB79C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B8D200D42D11B8F8D6C5E4722138D08 /* Build configuration list for PBXNativeTarget "Pods-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3EBB6987D60E339FA451E78FA588AA5 /* Debug */,
+				711A7E0A9C9178AB2707CAF46D169E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B92E6D58E571EB3796A6147851A26E39 /* Build configuration list for PBXNativeTarget "UICheckbox.Swift-UICheckbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD5E4B355228E711F6D2453006FACA5 /* Debug */,
+				B270F62FC2D7AA5FE4FC7D413F7EB41F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9D6F7ADCC078001A11C020B6D899E1B /* Build configuration list for PBXNativeTarget "UICheckbox.Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AEF6E436DE07159B5AEE67FFCA21300 /* Debug */,
+				DE8AE616D74E0968A7A677BAA66DC603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
