@@ -12,20 +12,44 @@ class ListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var listTable: UITableView!
     @IBOutlet weak var filterBtn: UIButton!
+    var data = [ServerData]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Network.instance.fetchData { (response, error) in
+            if error != nil{
+                print(error!)
+            }
+            else{
+                let res = response.result.value!
+                for item in res{
+                    self.data.append(item)
+                }
+                
+                self.listTable.reloadData()
+            }
+        }
+        
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return data.count
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: ListCell = listTable.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ListCell
-        
-        return cell
+        if let cell: ListCell = listTable.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? ListCell{
+            let list = self.data[indexPath.row]
+            cell.updateViews(serverData: list)
+            
+            return cell
+        }
+        else{
+            return ListCell()
+        }
         
     }
     

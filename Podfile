@@ -12,6 +12,7 @@ target 'Assignment' do
   pod 'SwiftyJSON' 
   pod 'AlamofireObjectMapper'
   pod 'Kingfisher'
+  
 
   # Pods for Assignment
 

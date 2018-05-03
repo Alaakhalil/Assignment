@@ -8,16 +8,26 @@
 
 import UIKit
 import UICheckbox_Swift
+import Kingfisher
 
 class ListCell: UITableViewCell {
 
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var imagee: RoundedImage!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var albumIDLabel: UILabel!
     @IBOutlet weak var checkedBtn: UICheckbox!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    func updateViews(serverData: ServerData){
+        self.titleLabel.text = serverData.title!
+        self.albumIDLabel.text = String(describing: serverData.albumId!)
+        let url = URL(string: serverData.thumbnailUrl!)
+        self.imagee.kf.setImage(with: url)
+        
+        
     }
 
    
