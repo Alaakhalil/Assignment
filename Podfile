@@ -8,6 +8,10 @@ target 'Assignment' do
   use_frameworks!
   
   pod 'UICheckbox.Swift'
+  pod 'Alamofire'
+  pod 'SwiftyJSON' 
+  pod 'AlamofireObjectMapper'
+  pod 'Kingfisher'
 
   # Pods for Assignment
 

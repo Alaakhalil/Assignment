@@ -1,12 +1,28 @@
 PODS:
+  - Alamofire (4.6.0)
+  - AlamofireObjectMapper (5.0.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.0)
+  - Kingfisher (4.6.1)
+  - ObjectMapper (3.1.0)
+  - SwiftyJSON (4.0.0)
   - UICheckbox.Swift (1.0.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper
+  - Kingfisher
+  - SwiftyJSON
   - UICheckbox.Swift
 
 SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   UICheckbox.Swift: 85715689206fac5bae38b308f19c2a3e00442c3b
 
-PODFILE CHECKSUM: 96f4d1b0ac71973ddf0fe763f95d95a9195266c4
+PODFILE CHECKSUM: d2a6fcf516dcc780f1de6b6134bbc607a2655823
 
 COCOAPODS: 1.4.0
