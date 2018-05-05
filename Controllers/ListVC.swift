@@ -7,34 +7,31 @@
 //
 
 import UIKit
+import UICheckbox_Swift
 
 class ListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var listTable: UITableView!
-    @IBOutlet weak var filterBtn: UIButton!
+    @IBOutlet weak var filterBtn: RoundedButton!
     var data = [ServerData]()
+    var selectedRows = [ServerData]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Network.instance.fetchData { (response, error) in
-            if error != nil{
-                print(error!)
-            }
-            else{
-                let res = response.result.value!
-                for item in res{
-                    self.data.append(item)
-                }
-                
-                self.listTable.reloadData()
-            }
-        }
+
+        getList()
+        
         
         
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if filterBtn.isTouchInside{
+            return selectedRows.count
+        }
+        else{
         return data.count
+        }
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -44,19 +41,75 @@ class ListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if let cell: ListCell = listTable.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? ListCell{
             let list = self.data[indexPath.row]
             cell.updateViews(serverData: list)
-            
-            return cell
+           return cell
         }
         else{
             return ListCell()
         }
-        
     }
+    
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let barItem = UIBarButtonItem()
         barItem.title = ""
         navigationItem.backBarButtonItem = barItem
+        if segue.identifier == "Filter"{
+            let vc = segue.destination as! FilteredListVC
+            print(selectedRows.count)
+            vc.filteredData = self.selectedRows
+        }
     }
+
+   
+    func getList(){
+        
+        DispatchQueue.main.async {
+            
+            Network.instance.fetchData { (response, error) in
+                if error != nil{
+                    print(error!)
+                }
+                else{
+                    let res = response.result.value!
+                    for item in res{
+                        self.data.append(item)
+                    }
+                    
+                    self.listTable.reloadData()
+                }
+            }
+            self.listTable.allowsMultipleSelection = true
+        }
+        
+//        listTable.allowsMultipleSelectionDuringEditing = true
+//        listTable.setEditing(true, animated: false)
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedRows.append(data[indexPath.row])
+        
+//        selectedRows = listTable.indexPathsForSelectedRows!
+//        if selectedRows.count > 10{
+//
+//        }
+    }
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let item = data[indexPath.row]
+        for value in selectedRows {
+            if item.title == value.title {
+                selectedRows =  selectedRows.filter() { $0 !== value }
+            }
+        }
+    }
+    @IBAction func filterBtnPressed(_ sender: Any) {
+
+        performSegue(withIdentifier: "Filter", sender: Any?.self)
+//        self.listTable.reloadData()
+//        navigationItem.title = "Filtered"
+//        listTable.allowsMultipleSelectionDuringEditing = false
+//        listTable.setEditing(false, animated: false)
+    }
+    
 
 }

@@ -10,6 +10,7 @@ import UIKit
 import UICheckbox_Swift
 import Kingfisher
 
+
 class ListCell: UITableViewCell {
 
     @IBOutlet weak var imagee: RoundedImage!
@@ -24,12 +25,28 @@ class ListCell: UITableViewCell {
     func updateViews(serverData: ServerData){
         self.titleLabel.text = serverData.title!
         self.albumIDLabel.text = String(describing: serverData.albumId!)
+        imagee.kf.indicatorType = .activity
         let url = URL(string: serverData.thumbnailUrl!)
         self.imagee.kf.setImage(with: url)
-        
-        
+        self.checkedBtn.isSelected = serverData.isSelected!
+      
     }
-
-   
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.selectionStyle = .none
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+//    override func setSelected(_ selected: Bool, animated: Bool) {
+//        if selected{
+//            checkedBtn.isSelected = true
+//        }
+//        else{
+//            checkedBtn.isSelected = false
+//        }
+//    }
+    
 
 }
