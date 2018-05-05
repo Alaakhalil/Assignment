@@ -199,7 +199,7 @@
                                                     <rect key="frame" x="137" y="30" width="230" height="31"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type title Here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Exi-PH-0lj">
-                                                            <rect key="frame" x="0.0" y="0.0" width="84" height="15"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="230" height="15"/>
                                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -215,18 +215,19 @@
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="k2S-r4-NJv" secondAttribute="trailing" id="2S4-vi-6Oq"/>
                                                         <constraint firstAttribute="bottom" secondItem="k2S-r4-NJv" secondAttribute="bottom" id="Lh5-CR-sns"/>
-                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Exi-PH-0lj" secondAttribute="trailing" constant="20" symbolic="YES" id="RkX-xb-Rd0"/>
                                                         <constraint firstItem="Exi-PH-0lj" firstAttribute="leading" secondItem="fXa-Pg-wvh" secondAttribute="leading" id="YrK-u5-SYO"/>
+                                                        <constraint firstItem="Exi-PH-0lj" firstAttribute="width" secondItem="fXa-Pg-wvh" secondAttribute="width" id="ffz-7n-gW0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Exi-PH-0lj" secondAttribute="trailing" id="gAq-bC-XfU"/>
                                                         <constraint firstItem="k2S-r4-NJv" firstAttribute="top" secondItem="Exi-PH-0lj" secondAttribute="bottom" constant="4" id="isI-pw-JPM"/>
                                                         <constraint firstItem="k2S-r4-NJv" firstAttribute="leading" secondItem="fXa-Pg-wvh" secondAttribute="leading" id="m90-JI-fZz"/>
                                                         <constraint firstItem="Exi-PH-0lj" firstAttribute="top" secondItem="fXa-Pg-wvh" secondAttribute="top" id="oSx-dT-oBM"/>
-                                                        <constraint firstItem="Exi-PH-0lj" firstAttribute="width" secondItem="fXa-Pg-wvh" secondAttribute="width" constant="-146" id="u2W-nv-mbQ"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="kaE-Wa-ef1" secondAttribute="bottom" constant="4" id="6He-to-eTO"/>
                                                 <constraint firstItem="kaE-Wa-ef1" firstAttribute="leading" secondItem="OzW-kT-Pzz" secondAttribute="leadingMargin" constant="8" id="Qay-Kx-bCd"/>
+                                                <constraint firstAttribute="trailing" secondItem="fXa-Pg-wvh" secondAttribute="trailing" constant="8" id="c6O-Bb-X2v"/>
                                                 <constraint firstItem="kaE-Wa-ef1" firstAttribute="top" secondItem="OzW-kT-Pzz" secondAttribute="topMargin" constant="4" id="o9f-ML-Qn1"/>
                                                 <constraint firstItem="fXa-Pg-wvh" firstAttribute="centerY" secondItem="kaE-Wa-ef1" secondAttribute="centerY" id="pml-sn-kFJ"/>
                                                 <constraint firstItem="fXa-Pg-wvh" firstAttribute="leading" secondItem="kaE-Wa-ef1" secondAttribute="trailing" constant="8" id="t0G-r2-rcF"/>

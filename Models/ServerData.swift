@@ -8,6 +8,8 @@
 
 import Foundation
 import ObjectMapper
+import UICheckbox_Swift
+
 
 
 
@@ -18,6 +20,7 @@ class ServerData:NSObject, Mappable{
     var url: String? = ""
     var title: String? = ""
     var thumbnailUrl: String? = ""
+    var selected: Bool? = false
     
     
     required init(map: Map){

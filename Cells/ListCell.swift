@@ -28,25 +28,8 @@ class ListCell: UITableViewCell {
         imagee.kf.indicatorType = .activity
         let url = URL(string: serverData.thumbnailUrl!)
         self.imagee.kf.setImage(with: url)
+         self.checkedBtn.isSelected = serverData.selected!
 
     }
-   
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.selectionStyle = .none
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        if selected{
-            checkedBtn.isSelected = true
-                }
-        else{
-            checkedBtn.isSelected = false
-        }
-    }
-    
 
 }

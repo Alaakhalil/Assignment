@@ -20,9 +20,8 @@ class ListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
 
         getList()
-        
-        
-        
+        self.filterBtn.isEnabled = false
+        self.filterBtn.alpha = 0.5
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,15 +40,13 @@ class ListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if let cell: ListCell = listTable.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? ListCell{
             let list = self.data[indexPath.row]
             cell.updateViews(serverData: list)
+            
            return cell
         }
         else{
             return ListCell()
         }
     }
-    
-    
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let barItem = UIBarButtonItem()
@@ -80,30 +77,45 @@ class ListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     self.listTable.reloadData()
                 }
             }
-            self.listTable.allowsMultipleSelection = true
         }
         
 
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-            self.selectedRows.append(self.data[indexPath.row])
+    
+    
+   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    let item = data[indexPath.row]
+    if self.selectedRows.contains(item){
+        self.selectedRows.remove(at: self.selectedRows.index(of: item)!)
     }
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let item = data[indexPath.row]
-        for value in selectedRows {
-            if item.title == value.title {
-                selectedRows =  selectedRows.filter() { $0 !== value }
-            }
-        }
+    else
+    {
+        self.selectedRows.append(item)
     }
+    if selectedRows.count > 9{
+        self.filterBtn.isEnabled = false
+        self.filterBtn.alpha = 0.5
+        let alertMassage = UIAlertController(title: "warnnig", message: "You can't select more then 10 items", preferredStyle: UIAlertControllerStyle.alert)
+        alertMassage.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+        self.present(alertMassage, animated: true, completion: nil)
+    }
+    else if selectedRows.count == 0
+    {
+        self.filterBtn.isEnabled = false
+        self.filterBtn.alpha = 0.5
+    }
+    else
+    {
+        self.filterBtn.isEnabled = true
+        self.filterBtn.alpha = 1
+    }
+        item.selected = !item.selected!
+        self.listTable.reloadData()
+}
     @IBAction func filterBtnPressed(_ sender: Any) {
 
         performSegue(withIdentifier: "Filter", sender: Any?.self)
-//        self.listTable.reloadData()
-//        navigationItem.title = "Filtered"
-//        listTable.allowsMultipleSelectionDuringEditing = false
-//        listTable.setEditing(false, animated: false)
     }
     
 

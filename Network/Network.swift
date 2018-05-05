@@ -19,10 +19,6 @@ class Network{
     func fetchData (completion: @escaping (_ response: DataResponse<[ServerData]>, _ error: String?) -> Void) -> Void{
         Alamofire.request("https://jsonplaceholder.typicode.com/photos").responseArray{(response: DataResponse<[ServerData]>) in
             if response.error == nil {
-                for item in response.result.value!{
-                    //print(item.albumId!)
-                }
-                
             completion(response, nil)
             
             }
