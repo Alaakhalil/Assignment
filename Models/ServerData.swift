@@ -18,7 +18,7 @@ class ServerData:NSObject, Mappable{
     var url: String? = ""
     var title: String? = ""
     var thumbnailUrl: String? = ""
-    var isSelected: bool?
+    
     
     required init(map: Map){
     

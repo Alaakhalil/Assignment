@@ -83,16 +83,11 @@ class ListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             self.listTable.allowsMultipleSelection = true
         }
         
-//        listTable.allowsMultipleSelectionDuringEditing = true
-//        listTable.setEditing(true, animated: false)
+
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.selectedRows.append(data[indexPath.row])
         
-//        selectedRows = listTable.indexPathsForSelectedRows!
-//        if selectedRows.count > 10{
-//
-//        }
+            self.selectedRows.append(self.data[indexPath.row])
     }
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         let item = data[indexPath.row]
